@@ -1,0 +1,105 @@
+/* Reset */
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-align: center;
+}
+
+.landing-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(250, 247, 243);
+  justify-content: center;
+}
+
+.welcome {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  color: #4d5c5e;
+  text-shadow: 2px 2px 8px grey;
+}
+
+.first-line {
+  opacity: 0;
+  width: 144px;
+  margin-left: -72px;
+  font-size: 2rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  animation: slide-left 1s forwards;
+}
+
+.second-line {
+  opacity: 0;
+  width: 38px;
+  margin-left: -19px;
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  animation: slide-right 1s 1s forwards;
+}
+
+.third-line {
+  opacity: 0;
+  width: 46px;
+  margin-left: -23px;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  animation: slide-up 1s 2s forwards;
+}
+
+.fourth-line {
+  width: 280px;
+  margin-left: -140px;
+  font-size: 4rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+.button {
+  width: 86px;
+  margin-left: -43px;
+  font-size: 2rem;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+
+/* Animations */
+
+@keyframes slide-left {
+  from { left: 100%; }
+  to { 
+    opacity: 1;
+    left: 50%;
+  }
+}
+
+@keyframes slide-right {
+  from { left: 0%; }
+  to { 
+    opacity: 1;
+    left: 50%;
+   }
+}
+
+@keyframes slide-up {
+  from { top: 100% }
+  to { 
+    opacity: 1;
+    top: 30%;
+  }
+}
+
