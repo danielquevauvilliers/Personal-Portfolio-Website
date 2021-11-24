@@ -23,7 +23,6 @@ html {
 .welcome {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
-  /*color: #4d5c5e;*/
   color: white;
   text-shadow: 2px 2px 2px black,
    0 0 16px grey, 0 0 4px black;
@@ -37,7 +36,7 @@ html {
   position: absolute;
   top: 10%;
   left: 50%;
-  animation: slide-left 1s forwards;
+  animation: slide-left 800ms forwards;
 }
 
 .second-line {
@@ -48,7 +47,7 @@ html {
   position: absolute;
   top: 20%;
   left: 50%;
-  animation: slide-right 1s 1s forwards;
+  animation: slide-right 800ms 600ms forwards;
 }
 
 .third-line {
@@ -59,7 +58,7 @@ html {
   position: absolute;
   top: 30%;
   left: 50%;
-  animation: slide-up 1s 2s forwards;
+  animation: slide-up 800ms 1200ms forwards;
 }
 
 .fourth-line {
@@ -70,7 +69,7 @@ html {
   position: absolute;
   top: 45%;
   left: 50%;
-  animation: flip-in 1.5s 3s forwards;
+  animation: flip-in 1.5s 2s forwards;
 }
 
 .fifth-line {
@@ -84,9 +83,9 @@ html {
   position: absolute;
   top: 70%;
   left: 50%;
-  animation: pop-in 1s 4.5s forwards,
-  shake 400ms 5.5s linear, 
-  color-change 5s infinite alternate forwards;
+  animation: pop-in 1s 3.5s forwards,
+  shake 400ms 4.5s linear, 
+  color-change 3.5s infinite alternate forwards;
 }
 
 /* Animations */
@@ -147,5 +146,55 @@ html {
   to {
     background-image: linear-gradient(to right, red, yellow, purple, green);
     filter: hue-rotate(360deg);
+  }
+}
+
+/* Responsiveness for landing page */
+
+@media only screen and (min-width: 1024px) {
+  .first-line {
+    width: 216px;
+    margin-left: -108px;
+    font-size: 3rem;
+  }
+
+  .second-line {
+    top: 25%;
+  }
+
+  @keyframes slide-up {
+    from { top: 100% }
+    to { 
+      opacity: 1;
+      top: 35%;
+    }
+  }
+
+  .third-line {
+    top: 35%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .first-line {
+    width: 362px;
+    margin-left: -181px;
+    font-size: 5rem;
+  }
+
+  .second-line {
+    top: 25%;
+  }
+
+  @keyframes slide-up {
+    from { top: 100% }
+    to { 
+      opacity: 1;
+      top: 35%;
+    }
+  }
+
+  .third-line {
+    top: 35%;
   }
 }
