@@ -63,13 +63,13 @@ html {
 
 .fourth-line {
   opacity: 0;
-  width: 282px;
-  margin-left: -141px;
-  font-size: 0.5rem;
+  width: 350px;
+  margin-left: -175px;
+  font-size: 0.1rem;
   position: absolute;
   top: 45%;
   left: 50%;
-  animation: flip-in 1.5s 2s forwards;
+  animation: flip-in 2s 2s forwards;
 }
 
 .fifth-line {
@@ -81,7 +81,7 @@ html {
   background-image: linear-gradient(to right, red, yellow, purple, green);
   font-size: 1.5rem;
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   animation: pop-in 1s 3.5s forwards,
   shake 400ms 4.5s linear, 
@@ -119,8 +119,8 @@ html {
   50% { top: 70%}
   to {
     opacity: 1;
-    font-size: 4rem;
-    transform: rotateX(360deg);
+    font-size: 4.4rem;
+    transform: rotate3d(1, 1, 1, 1080deg);
   }
 }
 
