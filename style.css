@@ -15,6 +15,7 @@ html {
   position: absolute;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   background-color: rgb(250, 247, 243);
   justify-content: center;
 }
@@ -22,8 +23,10 @@ html {
 .welcome {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
-  color: #4d5c5e;
-  text-shadow: 2px 2px 8px grey;
+  /*color: #4d5c5e;*/
+  color: white;
+  text-shadow: 2px 2px 2px black,
+   0 0 16px grey, 0 0 4px black;
 }
 
 .first-line {
@@ -60,21 +63,30 @@ html {
 }
 
 .fourth-line {
-  width: 280px;
-  margin-left: -140px;
-  font-size: 4rem;
+  opacity: 0;
+  width: 282px;
+  margin-left: -141px;
+  font-size: 0.5rem;
   position: absolute;
   top: 45%;
   left: 50%;
+  animation: flip-in 1.5s 3s forwards;
 }
 
-.button {
-  width: 86px;
-  margin-left: -43px;
-  font-size: 2rem;
+.fifth-line {
+  opacity: 0;
+  width: 252px;
+  margin-left: -126px;
+  padding: 5px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, red, yellow, purple, green);
+  font-size: 1.5rem;
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
+  animation: pop-in 1s 4.5s forwards,
+  shake 400ms 5.5s linear, 
+  color-change 5s infinite alternate forwards;
 }
 
 /* Animations */
@@ -103,3 +115,37 @@ html {
   }
 }
 
+@keyframes flip-in {
+  from {top: 0%}
+  50% { top: 70%}
+  to {
+    opacity: 1;
+    font-size: 4rem;
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes pop-in {
+  from { transform: scale(0.1);}
+  60% { transform: scale(1.2);}
+  to { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% {transform: translateX(-2px);}
+  25% {transform: translateX(4px);}
+  50% {transform: translateX(-4px);}
+  75% {transform: translateX(4px);}
+  100% {transform: translateX(-2px);}
+}
+
+@keyframes color-change {
+  from {}
+  to {
+    background-image: linear-gradient(to right, red, yellow, purple, green);
+    filter: hue-rotate(360deg);
+  }
+}
