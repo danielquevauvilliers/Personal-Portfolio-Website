@@ -1,3 +1,4 @@
+// Interactivity of landing page button
 const landingPage = document.getElementById("landing-page");
 const website = document.getElementById("website");
 
