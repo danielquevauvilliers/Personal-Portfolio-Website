@@ -5,25 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Ubuntu+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
+  
+  <!-- Link to CSS -->
   <link rel="stylesheet" href="style.css">
 
   <title>My Portfolio</title>
 </head>
 <body>
-  <div id="landing-page" class="landing-page">
+  <!-- Landing page with animation -->
+  <section id="landing-page" class="landing-page">
     <h1 class="welcome first-line">Welcome</h1>
     <h2 class="welcome second-line">To</h2>
     <h2 class="welcome third-line">My</h2>
     <h2 class="welcome fourth-line">Portfolio</h2>
     <h2 id="landing-page-button" class="welcome fifth-line">Click or Tap to Enter</h2>
-  </div>
-
-  <div id="website">
-    <p>Hello world!</p>
-  </div>
+  </section>
+  <!-- Website -->
+  <section id="website">
+    <header>
+      <h1 class="nunito-sans">Welcome To My Portfolio</h1>
+      <nav class="ubuntu-mono">
+        <div id="myName" class="italic">Daniel QUEVAUVILLIERS</div>
+        <ul>
+          <li><a href="#my-projects">My Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="my-projects">
+        <h2>My Projects</h2>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+      </section>
+      <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hello world!</p>
+      </section>
+    </main>
+    <footer></footer>
+  </section>
+  <!-- Link to JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

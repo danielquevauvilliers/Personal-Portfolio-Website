@@ -11,6 +11,19 @@ html {
   text-align: center;
 }
 
+/* Font family and styles*/
+.nunito-sans {
+  font-family: 'Nunito', sans-serif;
+}
+
+.ubuntu-mono {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.italic {
+  font-style: italic;
+}
+
 /* Landing Page */
 
 .landing-page {
@@ -206,3 +219,36 @@ html {
     top: 70%;
   }
 }
+
+/* Website */
+
+/* Main Header*/
+h1 {
+  margin: 0.5em;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 2px black,
+   0 0 16px grey, 0 0 4px black;
+}
+
+/* Nav Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav div {
+  font-size: 2rem;
+  margin: 0.5em 1em 0.5em 2em;
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0.5em 1em;
+}
+
+nav a{
+  text-decoration: none;
+}
+
