@@ -1,6 +1,7 @@
 /* Reset */
 html {
   font-size: 16px;
+  background-color: rgb(250, 247, 243);
 }
 
 * {
@@ -50,7 +51,7 @@ html {
   margin-left: -72px;
   font-size: 2rem;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   animation: slide-left 800ms forwards;
 }
@@ -221,6 +222,9 @@ html {
 }
 
 /* Website */
+#website {
+  display: none;
+}
 
 /* Main Header*/
 h1 {
