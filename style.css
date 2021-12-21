@@ -223,7 +223,7 @@ html {
 
 /* Website */
 #website {
-  display: none;
+  display: /*none*/ block;
 }
 
 /* Main Header*/
@@ -242,17 +242,33 @@ nav {
   justify-content: space-between;
 }
 nav div {
-  font-size: 2rem;
-  margin: 0.5em 1em 0.5em 2em;
+  font-size: 1.5rem;
+  margin: 0.5em 1em 0.5em 1em;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
-  font-size: 2rem;
-  margin: 0.5em 1em;
+  font-size: 1.5rem;
+  margin: 0.5em 1em 0.5em 0.5em;
 }
 
-nav a{
+nav a {
   text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+article {
+   display: flex;
+   flex-direction: column;
+}
+
+article p, h3 {
+  width: 50%;
+  text-align: left;
 }
 
