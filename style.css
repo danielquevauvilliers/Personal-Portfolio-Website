@@ -223,7 +223,7 @@ html {
 
 /* Website */
 #website {
-  display: /*none*/ block;
+  display: none;
 }
 
 /* Main Header*/
@@ -240,6 +240,7 @@ h1 {
 nav {
   display: flex;
   justify-content: space-between;
+  border: 1px solid darkblue;
 }
 nav div {
   font-size: 1.5rem;
@@ -262,11 +263,15 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 article {
-   display: flex;
+
+}
+
+.article-inner-container {
+   display: none;
    justify-content: space-between;
    border: 1px solid black;
    flex-wrap: wrap;
