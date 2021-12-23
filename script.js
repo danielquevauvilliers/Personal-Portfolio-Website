@@ -14,13 +14,19 @@ document.getElementById("landing-page-button").addEventListener("click", showWeb
 // Interactivity of project paragraphs
 const projectSwitches = document.querySelectorAll(".project-switch");
 
+window.onload = function() {
+  for (let i=0, iLen=projectSwitches.length; i < iLen; i++) {
+    projectSwitches[i].nextElementSibling.style.display = "none";
+  }
+}
+
 for (let i=0, iLen=projectSwitches.length; i < iLen; i++) {
   projectSwitches[i].onclick = function() {
     const element = this.nextElementSibling;
-    if (element.style.display !== "none") {
-      element.style.display = "none";
+    if (element.style.display === "none") {
+      element.style.display = "flex";
     } else {
-      element.style.display = "flex"
+      element.style.display = "none"
     }
   }
 }

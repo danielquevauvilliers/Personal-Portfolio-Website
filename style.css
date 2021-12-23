@@ -271,7 +271,6 @@ article {
 }
 
 .article-inner-container {
-   display: none;
    justify-content: space-between;
    border: 1px solid black;
    flex-wrap: wrap;
