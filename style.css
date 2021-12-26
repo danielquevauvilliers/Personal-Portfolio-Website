@@ -276,6 +276,13 @@ section {
   flex-direction: column;
   width: 50%;
   min-width: 300px;
+}
+
+.article-text ul {
+  list-style: inside;
+}
+
+li {
   text-align: left;
 }
 
@@ -288,4 +295,14 @@ h3.project-switch {
   width: 50%;
   min-width: 300px;
   height: auto;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+i {
+  font-size: 64px;
+  margin: 8px;
 }
