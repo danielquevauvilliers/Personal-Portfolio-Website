@@ -23,10 +23,10 @@ window.onload = function() {
 for (let i=0, iLen=projectSwitches.length; i < iLen; i++) {
   projectSwitches[i].onclick = function() {
     const spanChild = this.firstElementChild;
-    if (spanChild.innerHTML === "▼") {
-      spanChild.innerHTML = "▶";
+    if (spanChild.innerHTML === "▽") {
+      spanChild.innerHTML = "▷";
     } else {
-      spanChild.innerHTML = "▼";
+      spanChild.innerHTML = "▽";
     };
 
     const element = this.nextElementSibling;
