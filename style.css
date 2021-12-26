@@ -240,8 +240,8 @@ h1 {
 nav {
   display: flex;
   justify-content: space-between;
-  border: 1px solid darkblue;
 }
+
 nav div {
   font-size: 1.5rem;
   margin: 0.5em 1em 0.5em 10px;
@@ -266,13 +266,8 @@ section {
   margin: 10px;
 }
 
-article {
-
-}
-
 .article-inner-container {
    justify-content: space-between;
-   border: 1px solid black;
    flex-wrap: wrap;
 }
 
@@ -281,15 +276,12 @@ article {
   flex-direction: column;
   width: 50%;
   min-width: 300px;
-  border: 1px solid red;
-}
-
-h3 {
   text-align: left;
 }
 
-article p {
+h3.project-switch {
   text-align: left;
+  cursor: pointer;
 }
 
 .picture {

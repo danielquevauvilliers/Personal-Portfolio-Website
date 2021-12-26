@@ -22,6 +22,13 @@ window.onload = function() {
 
 for (let i=0, iLen=projectSwitches.length; i < iLen; i++) {
   projectSwitches[i].onclick = function() {
+    const spanChild = this.firstElementChild;
+    if (spanChild.innerHTML === "▼") {
+      spanChild.innerHTML = "▶";
+    } else {
+      spanChild.innerHTML = "▼";
+    };
+
     const element = this.nextElementSibling;
     if (element.style.display === "none") {
       element.style.display = "flex";
