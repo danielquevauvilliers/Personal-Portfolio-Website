@@ -227,6 +227,14 @@ html {
 }
 
 /* Main Header*/
+header {
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(250, 247, 243);
+}
+
 h1 {
   margin: 0.5em;
   font-size: 3rem;
@@ -259,6 +267,11 @@ nav a {
 }
 
 /* main */
+main {
+  position: relative;
+  top: 180px;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -267,8 +280,9 @@ section {
 }
 
 .article-inner-container {
-   justify-content: space-between;
-   flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .article-text {
@@ -278,8 +292,17 @@ section {
   min-width: 300px;
 }
 
+.bio {
+  width: 70%;
+  min-width: 300px;
+}
+
 .article-text ul {
   list-style: inside;
+}
+
+p {
+  text-align: justify;
 }
 
 li {
@@ -294,6 +317,14 @@ h3.project-switch {
 .picture {
   width: 50%;
   min-width: 300px;
+  padding: 0 5px;
+  height: auto;
+}
+
+.my-picture {
+  width: 30%;
+  min-width: 250px;
+  padding: 0 5px;
   height: auto;
 }
 
