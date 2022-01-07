@@ -12,6 +12,11 @@ html {
   text-align: center;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 /* Font family and styles*/
 .nunito-sans {
   font-family: 'Nunito', sans-serif;
@@ -224,6 +229,7 @@ html {
 /* Website */
 #website {
   display: none;
+  max-width: 900px;
 }
 
 /* Main Header*/
@@ -231,6 +237,7 @@ header {
   position: fixed;
   top: -10px;
   width: 100%;
+  max-width: 900px;
   z-index: 10;
   background-color: rgb(250, 247, 243);
 }
@@ -242,6 +249,10 @@ h1 {
   color: white;
   text-shadow: 2px 2px 2px black,
    0 0 16px grey, 0 0 4px black;
+}
+
+h2 {
+  margin: 15px 0;
 }
 
 /* Nav Bar */
@@ -259,11 +270,23 @@ nav div {
 nav ul li {
   display: inline-block;
   font-size: 1.5rem;
-  margin: 0.5em 1em 0.5em 0.5em;
+  margin: 0.5em;
 }
 
 nav a {
   text-decoration: none;
+}
+
+/* For vertical alignment of sections when called by navbar*/
+.anchor {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  top: -120px;
+  left: 0;
+  visibility: hidden;
 }
 
 /* main */
@@ -281,20 +304,22 @@ section {
 
 .article-inner-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .article-text {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
   min-width: 300px;
+  margin: 10px;
 }
 
 .bio {
-  width: 70%;
-  min-width: 300px;
+  width: 65%;
+  /*min-width: 300px;*/
+  margin: 10px;
 }
 
 .article-text ul {
@@ -312,6 +337,7 @@ li {
 h3.project-switch {
   text-align: left;
   cursor: pointer;
+  margin: 3px 0;
 }
 
 .picture {
@@ -323,7 +349,7 @@ h3.project-switch {
 
 .my-picture {
   width: 30%;
-  min-width: 250px;
+  min-width: 280px;
   padding: 0 5px;
   height: auto;
 }

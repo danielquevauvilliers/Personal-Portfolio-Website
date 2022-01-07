@@ -5,7 +5,7 @@ const website = document.getElementById("website");
 
 function showWebsite() {
   landingPage.style.display = "none";
-  website.style.display = "block";
+  website.style.display = "flex";
 }
 
 document.getElementById("landing-page-button").addEventListener("click", showWebsite);
